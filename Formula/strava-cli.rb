@@ -1,7 +1,7 @@
 class StravaCli < Formula
   include Language::Python::Virtualenv
 
-  desc "Shiny new formula"
+  desc "Strava Command-Line Tools"
   homepage "https://github.com/bwilczynski/strava-cli"
   url "https://files.pythonhosted.org/packages/f2/2f/5d18e37eeb0f416daf9c3c04b2449ffffa697bdf91b26900314d22799c31/strava-cli-0.4.4.tar.gz"
   sha256 "07e61262386e1ff91336207bc2670b12c66d4f70c23968c96e65904b43d1543a"
