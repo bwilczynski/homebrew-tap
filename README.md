@@ -1,10 +1,14 @@
 # Strava CLI Homebrew Repository
 
-This is a homebrew repo for installing strava-cli.
+This is a homebrew repo for installing the following tools:
+
+* strava-cli
+* sonos-cli
 
 ## Usage
 
 ```console
-$ brew tap bwilczynski/strava-cli
-$ brew install bwilczynski/strava-cli/strava-cli
+$ brew tap bwilczynski/tap
+$ brew install strava-cli
+$ brew install sonos-cli
 ```
