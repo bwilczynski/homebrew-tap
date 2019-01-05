@@ -89,6 +89,6 @@ class StravaCli < Formula
   end
 
   test do
-    system "#{bin}/strava-cli", "--version"
+    system "#{bin}/strava", "--version"
   end
 end
