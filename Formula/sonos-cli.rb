@@ -1,10 +1,10 @@
-class StravaCli < Formula
+class SonosCli < Formula
   include Language::Python::Virtualenv
 
   desc "Strava Command-Line Tools"
-  homepage "https://github.com/bwilczynski/strava-cli"
-  url "https://files.pythonhosted.org/packages/1e/c3/7102b5399c593d64b0859d173c00cc2edef88b15d680328b2ae69dd3bd30/strava-cli-0.4.6.tar.gz"
-  sha256 "6f41cecb841ee594264762d24d4f9c623ffc041b20d3cd1fe5b56b2b17fd388f"
+  homepage "https://github.com/bwilczynski/sonos-cli"
+  url "https://files.pythonhosted.org/packages/f7/31/b1fd33ced957716df571e517192f398f03fcfd9398d7240d09a4e56bc61a/sonos-cli-0.2.0.tar.gz"
+  sha256 "db21019bafe36becb20ec4bfcaf884ad555dc796847bd90bbc752e1e4762d665"
 
   depends_on "python3"
 
@@ -23,11 +23,6 @@ class StravaCli < Formula
     sha256 "5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
   end
 
-  resource "dateparser" do
-    url "https://files.pythonhosted.org/packages/e7/87/fc2ab653e628e2e51e00115bc9cb14c31afdd03acb710f137056a1c13f7c/dateparser-0.7.0.tar.gz"
-    sha256 "940828183c937bcec530753211b70f673c0a9aab831e43273489b310538dff86"
-  end
-
   resource "idna" do
     url "https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/idna-2.8.tar.gz"
     sha256 "c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"
@@ -36,21 +31,6 @@ class StravaCli < Formula
   resource "oauthlib" do
     url "https://files.pythonhosted.org/packages/df/5f/3f4aae7b28db87ddef18afed3b71921e531ca288dc604eb981e9ec9f8853/oauthlib-2.1.0.tar.gz"
     sha256 "ac35665a61c1685c56336bda97d5eefa246f1202618a1d6f34fccb1bdd404162"
-  end
-
-  resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/0e/01/68747933e8d12263d41ce08119620d9a7e5eb72c876a3442257f74490da0/python-dateutil-2.7.5.tar.gz"
-    sha256 "88f9287c0174266bb0d8cedd395cfba9c58e87e5ad86b2ce58859bc11be3cf02"
-  end
-
-  resource "pytz" do
-    url "https://files.pythonhosted.org/packages/cd/71/ae99fc3df1b1c5267d37ef2c51b7d79c44ba8a5e37b48e3ca93b4d74d98b/pytz-2018.7.tar.gz"
-    sha256 "31cb35c89bd7d333cd32c5f278fca91b523b0834369e757f4c5641ea252236ca"
-  end
-
-  resource "regex" do
-    url "https://files.pythonhosted.org/packages/16/07/ee3e02770ed456a088b90da7c9b1e9aa227e3c956d37b845cef2aab93764/regex-2018.11.22.tar.gz"
-    sha256 "79a6a60ed1ee3b12eb0e828c01d75e3b743af6616d69add6c2fde1d425a4ba3f"
   end
 
   resource "requests" do
@@ -63,19 +43,9 @@ class StravaCli < Formula
     sha256 "8886bfec5ad7afb391ed5443b1f697c6f4ae98d0e5620839d8b4499c032ada3f"
   end
 
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
-    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
-  end
-
   resource "tabulate" do
     url "https://files.pythonhosted.org/packages/12/c2/11d6845db5edf1295bc08b2f488cf5937806586afe42936c3f34c097ebdc/tabulate-0.8.2.tar.gz"
     sha256 "e4ca13f26d0a6be2a2915428dc21e732f1e44dad7f76d7030b2ef1ec251cf7f2"
-  end
-
-  resource "tzlocal" do
-    url "https://files.pythonhosted.org/packages/cb/89/e3687d3ed99bc882793f82634e9824e62499fdfdc4b1ae39e211c5b05017/tzlocal-1.5.1.tar.gz"
-    sha256 "4ebeb848845ac898da6519b9b31879cf13b6626f7184c496037b818e238f2c4e"
   end
 
   resource "urllib3" do
@@ -89,6 +59,6 @@ class StravaCli < Formula
   end
 
   test do
-    strava --version
+    false
   end
 end
