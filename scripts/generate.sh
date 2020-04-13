@@ -3,7 +3,9 @@
 LIB=$1
 WORKING_DIR=$PWD
 
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
 
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
