@@ -3,8 +3,8 @@ class SonosCli < Formula
 
   desc "Strava Command-Line Tools"
   homepage "https://github.com/bwilczynski/sonos-cli"
-  url "https://files.pythonhosted.org/packages/c7/66/594aeee56306cf66b898993a54fe43bc2da29dd3f6e7c3b0a651df0598ea/sonos-cli-0.3.6.tar.gz"
-  sha256 "eb2beb7c2fbdc99aa882aae502d867a547c911aa81823f612b72e8ac46ae1e6e"
+  url "https://files.pythonhosted.org/packages/36/37/bc869c0513420024399b28cd0ed1c7b51be4b80de5be28bed9d432f4a131/sonos-cli-0.3.7.tar.gz"
+  sha256 "c7b4438fbff7f0d17855d5d664c5dda0ea3b5f0861c53dbfa83601e8a66a4db2"
 
   depends_on "python3"
 
