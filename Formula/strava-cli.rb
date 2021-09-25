@@ -3,8 +3,8 @@ class StravaCli < Formula
 
   desc "Strava Command-Line Tools"
   homepage "https://github.com/bwilczynski/strava-cli"
-  url "https://files.pythonhosted.org/packages/d0/31/8671cc2e50e5496984492c441d1f0112579701d844118cd57ceeda197479/strava-cli-0.6.0.tar.gz"
-  sha256 "b76631e4688f0b89fecad4f0eddf5347ba53db2addb131de645e139dcfa0e88c"
+  url "https://files.pythonhosted.org/packages/c8/ad/cb209b1463f9e991744d274bed3c6c710be14eee537a5cac40ee864a3094/strava-cli-0.6.1.tar.gz"
+  sha256 "15fecebb0a7b2d166c2e23869fe9362deb5c5ff0f73ac3cfd3957d9fa4d1a7f3"
 
   depends_on "python3"
 
