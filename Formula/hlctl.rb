@@ -5,20 +5,20 @@
 class Hlctl < Formula
   desc "CLI for managing homelab infrastructure"
   homepage "https://github.com/bwilczynski/homelab-cli"
-  version "20260529.6c09"
+  version "20260530.33be"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/bwilczynski/homelab-cli/releases/download/v20260529.6c09/hlctl_20260529.6c09_darwin_amd64.tar.gz"
-    sha256 "154b02bf3035f80e4928f2494c90402b2e7e902e07be60ed44460aa75bbf9082"
+    url "https://github.com/bwilczynski/homelab-cli/releases/download/v20260530.33be/hlctl_20260530.33be_darwin_amd64.tar.gz"
+    sha256 "e09636688a9b8bf45324864ba66208705c4b24d1370fd1e51639e0416ed27fb1"
 
     define_method(:install) do
       bin.install "hlctl"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/bwilczynski/homelab-cli/releases/download/v20260529.6c09/hlctl_20260529.6c09_darwin_arm64.tar.gz"
-    sha256 "6a690b292f59175e23c84a12b938d761846b4cfd051a74b071e7af85cbb145eb"
+    url "https://github.com/bwilczynski/homelab-cli/releases/download/v20260530.33be/hlctl_20260530.33be_darwin_arm64.tar.gz"
+    sha256 "bb9097b082f55c4a828e579c4d08df58b5707e81fada719db3aec01664e42a90"
 
     define_method(:install) do
       bin.install "hlctl"
