@@ -5,12 +5,12 @@
 class Hlctl < Formula
   desc "CLI for managing homelab infrastructure"
   homepage "https://github.com/bwilczynski/homelab-cli"
-  version "1.6.0"
+  version "1.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.0/hlctl_1.6.0_darwin_amd64.tar.gz"
-      sha256 "72ba3926d82d353f4cfd558a339d3a7a04ed0829a3f8c8dc7c8b00806c28b490"
+      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.1/hlctl_1.6.1_darwin_amd64.tar.gz"
+      sha256 "20fb6b4c20de6864129627ef04c31a923726faf4ecd38e1a6a5bedec632243ae"
 
       define_method(:install) do
         bin.install "hlctl"
@@ -18,8 +18,8 @@ class Hlctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.0/hlctl_1.6.0_darwin_arm64.tar.gz"
-      sha256 "29c042450600bb08a1acfcf34cb0a1e3b96cb708792324ac147b820aeadb5977"
+      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.1/hlctl_1.6.1_darwin_arm64.tar.gz"
+      sha256 "2cfc0c3f2e6f4aabc8da41b36aea3fccce37f28baacdb6b8ac12c1351a781d9a"
 
       define_method(:install) do
         bin.install "hlctl"
@@ -30,16 +30,16 @@ class Hlctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.0/hlctl_1.6.0_linux_amd64.tar.gz"
-      sha256 "5f4c0ddb27d559a6a451ef9f94c2580d49f7e323d5712081aa3b5397f7f2a916"
+      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.1/hlctl_1.6.1_linux_amd64.tar.gz"
+      sha256 "7111a4194f0b1a33cd029c299285c3f9bd2a586dd6e27eb788022292f0ea61c7"
       define_method(:install) do
         bin.install "hlctl"
         generate_completions_from_executable(bin/"hlctl", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.0/hlctl_1.6.0_linux_arm64.tar.gz"
-      sha256 "f4b65909367ff5c9a74fa3d47be8ff9ce54a0fbc3de7fe19a2baa4f8630366cb"
+      url "https://github.com/bwilczynski/homelab-cli/releases/download/v1.6.1/hlctl_1.6.1_linux_arm64.tar.gz"
+      sha256 "4817711a36fad024d325d29ebc97cbc38df44fb69f92a665e5559fc58aee226c"
       define_method(:install) do
         bin.install "hlctl"
         generate_completions_from_executable(bin/"hlctl", "completion")
